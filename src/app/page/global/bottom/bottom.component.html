@@ -1,0 +1,37 @@
+<div class="bottom__container">
+<h2 class="secondIntro">Wanna know some secondary characters?</h2>
+<p class="secondDescription">Click the button bellow to discover four of them </p>
+<div class="secondary" *ngIf="bottomModel.button == 'Start!'">
+    <button (click)="onClickProduct()">{{bottomModel.button}} </button> 
+</div>
+<div class="secondary" *ngIf="bottomModel.button == 'One'">
+    <button (click)="onClickProduct()">{{bottomModel.button}} </button>
+    <h1>{{bottomModel.characters[0].nombre}}</h1>
+    <p>{{bottomModel.characters[0].who}}</p>
+    <img src="{{bottomModel.characters[0].img.src}}" alt="{{bottomModel.characters[0].img.alt}}">
+    
+</div>
+
+<div class="secondary" *ngIf="bottomModel.button == 'Two'">
+    <button (click)="onClickProduct()">{{bottomModel.button}} </button>
+    <h1>{{bottomModel.characters[1].nombre}}</h1>
+    <p>{{bottomModel.characters[1].who}}</p>
+    <img src="{{bottomModel.characters[1].img.src}}" alt="{{bottomModel.characters[1].img.alt}}">
+    
+</div>
+<div class="secondary" *ngIf="bottomModel.button == 'Three'">
+    <button (click)="onClickProduct()">{{bottomModel.button}} </button>
+    <h1>{{bottomModel.characters[2].nombre}}</h1>
+    <p>{{bottomModel.characters[2].who}}</p>
+    <img src="{{bottomModel.characters[2].img.src}}" alt="{{bottomModel.characters[2].img.alt}}">
+    
+</div>
+<div class="secondary" *ngIf="bottomModel.button == 'Four'">
+    <button (click)="onClickProduct()">{{bottomModel.button}} </button>
+    <h1>{{bottomModel.characters[3].nombre}}</h1>
+    <p>{{bottomModel.characters[3].who}}</p>
+    <img src="{{bottomModel.characters[3].img.src}}" alt="{{bottomModel.characters[3].img.alt}}">
+    
+</div>
+</div>
+

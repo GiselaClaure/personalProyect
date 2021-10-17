@@ -1,0 +1,12 @@
+<div class="galleryModel">
+    <h2 class="galleryTitle">{{gallery.galleryTitle}}</h2>
+    <ul class="container">
+        <li class="list"  *ngFor="let character of gallery.character">
+            <h3 class="characterName">{{character.name}}</h3>
+            <p>{{character.about}}</p>
+            <img class="gallery" src="{{character.img.src}}" alt="{{character.img.alt}}">
+        </li>
+    </ul>
+
+</div>
+
